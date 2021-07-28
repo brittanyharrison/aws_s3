@@ -78,17 +78,23 @@ s3_client = boto3.client('s3',
                          region_name='eu-west-1')
 
 # Creating a bucket in AWS S3
-# client.create_bucket(Bucket='eng89brittany',
-#                      CreateBucketConfiguration={'LocationConstraint': 'eu-west-1'})
+client.create_bucket(Bucket='eng89brittany',
+                     CreateBucketConfiguration={'LocationConstraint': 'eu-west-1'})
 
 # Upload a file to the bucket
 s3_client.upload_file('hello.txt', 'eng89brittany', 'hello.txt')
 
 # Retreive file for S3
-s3_client.dow
+
 
 # Delete file form S3
+s3_client.delete_object(
+    Bucket='eng89brittany',
+    Key='hello.txt'
+)
+
 
 # Delete Bucket
-
+s3_client.delete_bucket(
+    Bucket='eng89brittany',)
 ```
