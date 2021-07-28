@@ -1,12 +1,11 @@
 # S3
 Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage through a web service interface. S3 is the only object storage service that allows you to block public access to all of your objects at the bucket.
 
-
-**DIAGRAM PENDING...**
+![img](img/S3.jpg)
 
 # Disaster Recovery Scenario
 
-**Pending**
+In teh case of a disaster emergency we must have our files backed up. This is where **S3 Buckets** come in ...
 
 # AWS Comnand Line Interface (AWSCLI)
 
